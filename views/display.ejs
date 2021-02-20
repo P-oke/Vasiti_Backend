@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Avios</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse float-right" id="navbarNavAltMarkup">
+        <div class="navbar-nav float-sm-left">
+          <a class="nav-link" href="/cart"
+            ><i class="fa fa-cart-plus" aria-hidden="true"></i
+          ></a>
+          <a class="nav-link" href="/checkout"
+            ><i class="fa fa-credit-card" aria-hidden="true"></i> Checkout</a
+          >
+        </div>
+      </div>
+
+      <div class="float-right">
+        <a href="/add" class="btn btn-info">Add Variant</a>
+      </div>
+    </nav>
+
+    <div class="card-deck mt-4 mb-4">
+      <div class="card">
+        <img src="../imgs/shoe.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Shoe</h5>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">size: 32</li>
+            <li class="list-group-item">color: blue</li>
+            <li class="list-group-item">quantity: 18</li>
+            <li class="list-group-item">price: #2000</li>
+          </ul>
+          <p class="card-text">
+            <a href="" class="btn btn-info">Add to Cart</a>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../imgs/shoe.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Shoe</h5>
+          <p class="card-text"></p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">size: 34</li>
+            <li class="list-group-item">color: red</li>
+            <li class="list-group-item">quantity: 35</li>
+            <li class="list-group-item">price: #2000</li>
+          </ul>
+          <p class="card-text">
+            <a href="" class="btn btn-info">Add to Cart</a>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../imgs/shoe.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Shoe</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">size: 36</li>
+            <li class="list-group-item">color: red</li>
+            <li class="list-group-item">quantity: 50</li>
+            <li class="list-group-item">price: #2000</li>
+          </ul>
+          <p class="card-text">
+            <a href="" class="btn btn-info">Add to Cart</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
