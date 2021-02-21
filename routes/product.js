@@ -4,7 +4,7 @@ const Product=require("../model/product")
 
 router.get("/", async (req, res)=>{
     try {
-        const products=await Product.find({}).lean()
+        const products=await Product.find({})
         res.render("display", {products})
         
     } catch (error) {
@@ -52,7 +52,7 @@ router.put("/update/:id", async (req, res)=>{
 })
 
 router.delete("/:id", async (req, res)=>{
-    let product= await Product.findById(req.params.id).lean()
+    let product= await Product.findById(req.params.id)
     try {
         if (product) {
             product.remove()
@@ -61,11 +61,10 @@ router.delete("/:id", async (req, res)=>{
         }
         
     } catch (error) {
-        res.status(500).send({msg:"product cannot be found"})
+        res.status(500).send({msg:"Product cannot be found"})
         
     }
 
 })
-
 
 module.exports=router

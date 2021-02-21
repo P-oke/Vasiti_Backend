@@ -8,6 +8,8 @@ const app=express()
 
 dotenv.config({path: "./config/.env"})
 
+app.use(express.json())
+
 connectDB()
 
 //middleware
